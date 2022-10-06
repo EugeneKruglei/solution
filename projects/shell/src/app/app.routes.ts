@@ -6,6 +6,7 @@ import {
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FlightsSearchComponent } from '../../../mfe1/src/app/flights/flights-search/flights-search.component';
 
 const URL = 'http://localhost:3000/remoteEntry.js';
 
@@ -25,7 +26,7 @@ export const APP_ROUTES: Routes = [
         type: 'manifest',
         remoteName: 'mfe1',
         exposedModule: './Module',
-      }).then((m) => m.FlightsModule),
+      }).then((m) => m.AppModule),
   },
   {
     path: 'react',
